@@ -1,10 +1,9 @@
 <div>
   <table>
     <thead>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th>Action</th>
+      <th *ngFor="let header of headers">
+        {{ header.name }}
+      </th>
     </thead>
     <tbody>
       <tr *ngFor="let product of products">
