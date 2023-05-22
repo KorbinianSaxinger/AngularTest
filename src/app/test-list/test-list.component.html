@@ -1,0 +1,25 @@
+<div>
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.name }}</td>
+        <td>{{ product.price + ' €' }}</td>
+        <td>{{ product.description }}</td>
+        <td>
+          <button
+            class="button fancy-button-2"
+            (click)="share(product.name, product.price)"
+          >
+            <i class="material-icons">shopping_cart</i>In den Einkaufswagen
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

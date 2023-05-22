@@ -1,0 +1,12 @@
+body {
+  background-color: green;
+}
+
+h2 {
+  color: red;
+  padding: 16px;
+}
+
+td {
+  padding-left: 20px;
+}
